@@ -6,30 +6,12 @@
     <title>Custom Login Page</title>
     <style>
         /* Add your custom CSS here */
-        .hidden-button {
+        .accountButton {
             display: none;
         }
     </style>
 </head>
 <body>
     <div id="api"></div>
-    <script type="text/javascript">
-        // Function to disable the specific identity provider button
-        function disableIdentityProviderButton() {
-            var providerButtons = document.querySelectorAll('.accountButton');
-            if (providerButtons && providerButtons != undefined && providerButtons != null) {
-                console.log("providerButton found!");
-                providerButtons.forEach((providerButton) => {
-                    providerButton.classList.add('hidden-button');
-                })
-            }
-            console.log("Added hidden-button class!")
-        }
-
-        // Call the function to disable the button after the page loads
-        window.onload = function() {
-            disableIdentityProviderButton();
-        };
-    </script>
 </body>
 </html>
