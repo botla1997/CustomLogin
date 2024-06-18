@@ -17,7 +17,7 @@
         // Function to disable the specific identity provider button
         function disableIdentityProviderButton() {
             var providerButton = document.querySelectorAll('.accountButton');
-            if (providerButton) {
+            if (providerButton && providerButton != undefined) {
                 providerButton.classList.add('hidden-button');
             }
             console.log("Added hidden-button class!")
