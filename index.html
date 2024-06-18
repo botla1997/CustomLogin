@@ -16,10 +16,9 @@
     <script type="text/javascript">
         // Function to disable the specific identity provider button
         function disableIdentityProviderButton() {
-            var providerButton = document.querySelector("button[id*='EulEntraButtonless']");
+            var providerButton = document.querySelectorAll('.accountButton');
             if (providerButton) {
                 providerButton.classList.add('hidden-button');
-                providerButton.disabled = true;
             }
         }
 
